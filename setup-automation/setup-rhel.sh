@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p ~/.config/containers
 cat<<EOF> ~/.config/containers/auth.json
 {
     "auths": {
