@@ -6,9 +6,12 @@ The `lab_name` var, known as an asciidoc attribute, is set in `site.yml` and can
 They are both free to change its value and if you prefer to use a different var name, you can change the value of `lab_name`, for example to `title` in `site.yml` and then reference it in your content as `\{site-title}` (Ex: {site-title}).
 
 Example:
-[source,asciidoc]
+[source,bash,run]
 ----
-{my_var}
+podman run -u : --rm -v $HOME/.config:/config:Z \
+-v $HOME/.local/bin:/config/.local/bin:Z \
+registry.redhat.io/rhel-cla/installer-rhel10:latest \
+install-systemd
 ----
 
 Variable rendered:
