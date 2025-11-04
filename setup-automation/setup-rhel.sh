@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# registry.redhat.io/rhel-cla/installer:latest
 mkdir -p ~/.config/containers
 cat<<EOF> ~/.config/containers/auth.json
 {
@@ -10,3 +11,6 @@ cat<<EOF> ~/.config/containers/auth.json
     }
   }
 EOF
+
+# download the necessary image
+podman pull registry.redhat.io/rhel-cla/installer:latest
