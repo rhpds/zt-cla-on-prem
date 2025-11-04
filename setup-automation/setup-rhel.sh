@@ -13,4 +13,4 @@ cat<<EOF> ~/.config/containers/auth.json
 EOF
 
 # download the necessary image
-podman pull registry.redhat.io/rhel-cla/installer:latest
+podman pull registry.redhat.io/rhel-cla/installer-rhel10:latest
