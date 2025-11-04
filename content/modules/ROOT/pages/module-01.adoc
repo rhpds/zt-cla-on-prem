@@ -24,9 +24,9 @@ To display an image in your Antora documentation, place the image file in the `a
 
 === Basic Syntax
 
-[source,asciidoc]
+[source,bash,run]
 ----
-image::example-image.png[Example Image, width=100, height=100]
+rhel-cla start
 ----
 
 This will render the `example-image.png` image as it follows:
