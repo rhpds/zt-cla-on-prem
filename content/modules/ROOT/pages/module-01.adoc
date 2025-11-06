@@ -10,8 +10,7 @@ Example:
 ----
 podman run -u : --rm -v $HOME/.config:/config:Z \
 -v $HOME/.local/bin:/config/.local/bin:Z \
-registry.redhat.io/rhel-cla/installer-rhel10:latest \
-install-systemd
+registry.redhat.io/rhel-cla/installer-rhel10:latest
 ----
 
 Variable rendered:
