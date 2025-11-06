@@ -14,6 +14,3 @@ EOF
 
 # download the necessary image
 podman pull registry.redhat.io/rhel-cla/installer-rhel10:latest
-
-# Fix registry.redhat.io pull token leak
-rm ~/.config/containers/auth.json
