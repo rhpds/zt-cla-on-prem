@@ -14,3 +14,5 @@ EOF
 
 # download the necessary image
 podman pull registry.redhat.io/rhel-cla/installer-rhel10:latest
+# download CLA dependencies
+podman pull registry.redhat.io/rhel-cla/rag-database-rhel10:latest
