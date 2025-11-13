@@ -340,3 +340,8 @@ egress:
     - ipBlock:
         cidr: 96.17.184.251/32
 
+ingress:
+  - from:
+      - podSelector:
+          matchLabels:
+            kubevirt.io: virt-launcher
