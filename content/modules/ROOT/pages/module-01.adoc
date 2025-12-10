@@ -17,9 +17,6 @@ Variable rendered:
 
 {my_var}
 
-== Inserting Images
-
-To display an image in your Antora documentation, place the image file in the `assets/images/` folder of the module, then reference it using the `image::[]` macro
 
 === Basic Syntax
 
