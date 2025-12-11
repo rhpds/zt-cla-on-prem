@@ -5,7 +5,7 @@ Start the container using the 'rhel-cla' command
 rhel-cla start
 ----
 
-Change the command line assistant configuration to use the local server. You can manually modify the file or use the following command.
+Change the command line assistant configuration to use the local server. You can manually modify `/etc/xdg/command-line-assistant/config.toml` or use the following command.
 [source,bash,run]
 ----
 sed -i 's|https://cert.console.redhat.com/api/lightspeed/v1|http://127.0.0.1:8000/v1|g' /etc/xdg/command-line-assistant/config.toml

@@ -10,7 +10,7 @@ registry.redhat.io/rhel-cla/installer-rhel10:latest
 ----
 
 === Start the rhel-cla service
-Start the container using the 'rhel-cla' command
+Start the container using the `rhel-cla` command
 [source,bash,run]
 ----
 rhel-cla start
