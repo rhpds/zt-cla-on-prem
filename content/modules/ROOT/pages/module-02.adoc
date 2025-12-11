@@ -11,6 +11,12 @@ Change the command line assistant configuration to use the local server. You can
 sed -i 's|https://cert.console.redhat.com/api/lightspeed/v1|http://127.0.0.1:8000/v1|g' /etc/xdg/command-line-assistant/config.toml
 ----
 
+Because we are running this model on CPU only, we need to increase the timeout period from 30 seconds to 120 seconds.
+[source,bash,run]
+----
+sed -i 's|timeout = 30|timeout = 120|g' /etc/xdg/command-line-assistant/config.toml
+----
+
 Restart clad using systemctl to reload the configuration.
 [source,bash,run]
 ----
