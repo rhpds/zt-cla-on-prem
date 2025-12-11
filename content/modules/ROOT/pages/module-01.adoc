@@ -1,7 +1,5 @@
-= Writing your lab
-
-== Run the installer
-Download the installer for offline Command Line Assistant
+=== Run the installer
+Download the installer for offline Command Line Assistant.
 [source,bash,run]
 ----
 podman run -u : --rm -v $HOME/.config:/config:Z \
@@ -10,9 +8,8 @@ registry.redhat.io/rhel-cla/installer-rhel10:latest
 ----
 
 === Install Command Line Assistant
-Use `dnf` to install the Command Line Assistant client
+Use `dnf` to install the Command Line Assistant client. This is the same client that you would use for the online Command Line Assistant. We'll configure it for offline use next.
 [source,bash,run]
 ----
 dnf install -y command-line-assistant
 ----
-
