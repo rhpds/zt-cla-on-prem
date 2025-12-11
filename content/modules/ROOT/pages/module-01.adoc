@@ -9,10 +9,10 @@ podman run -u : --rm -v $HOME/.config:/config:Z \
 registry.redhat.io/rhel-cla/installer-rhel10:latest
 ----
 
-=== Start the rhel-cla service
-Start the container using the `rhel-cla` command
+=== Install Command Line Assistant
+Use `dnf` to install the Command Line Assistant client
 [source,bash,run]
 ----
-rhel-cla start
+dnf install -y command-line-assistant
 ----
 

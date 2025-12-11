@@ -1,1 +1,6 @@
-=== Configure the command line assistant
+=== Use the Command Line Assistant
+As the CLA for help
+[source,bash,run]
+----
+c "what is an immutable file?"
+----

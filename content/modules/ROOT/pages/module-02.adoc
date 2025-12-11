@@ -1,5 +1,5 @@
 === Configure the command line assistant
-Start the container using the 'rhel-cla' command
+Start the container using the `rhel-cla` command
 [source,bash,run]
 ----
 rhel-cla start
