@@ -1,39 +1,21 @@
-= Writing your lab
+IMPORTANT:
+.Offline Command Line Assistant (CLA) is Developer Preview software
+====
+Developer Preview software is not supported by Red Hat in any way and is not functionally complete or production-ready. Do not use Developer Preview software for production or business-critical workloads. Get updated information about the current state of Command Line Assistant for disconnected environments here: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/interacting_with_the_command-line_assistant_powered_by_rhel_lightspeed/containerized-command-line-assistant-for-disconnected-environments[https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/interacting_with_the_command-line_assistant_powered_by_rhel_lightspeed/containerized-command-line-assistant-for-disconnected-environments^]
+====
 
-== Variables
-
-The `lab_name` var, known as an asciidoc attribute, is set in `site.yml` and can be used to set the lab_name (Example: {lab_name}) or title of your content.
-They are both free to change its value and if you prefer to use a different var name, you can change the value of `lab_name`, for example to `title` in `site.yml` and then reference it in your content as `\{site-title}` (Ex: {site-title}).
-
-Example:
-[source,asciidoc]
+=== Run the installer
+Download the installer for offline Command Line Assistant.
+[source,bash,run]
 ----
-{my_var}
-----
-
-Variable rendered:
-
-{my_var}
-
-== Inserting Images
-
-To display an image in your Antora documentation, place the image file in the `assets/images/` folder of the module, then reference it using the `image::[]` macro
-
-=== Basic Syntax
-
-[source,asciidoc]
-----
-image::example-image.png[Example Image, width=100, height=100]
+podman run -u : --rm -v $HOME/.config:/config:Z \
+-v $HOME/.local/bin:/config/.local/bin:Z \
+registry.redhat.io/rhel-cla/installer-rhel10:latest
 ----
 
-This will render the `example-image.png` image as it follows:
-
-image::example-image.png[Example Image, width=100, height=100]
-
-=== Understanding the Antora Configuration
-
-This lab explains the purpose and structure of the YAML configuration used in an Antora-based documentation site.
-
-=== Basic Structure
-
-The configuration is written in YAML `ui-config.yml` and includes two main sections: `antora` and `tabs`. Click next to know more.
+=== Install Command Line Assistant
+Use `dnf` to install the Command Line Assistant client. This is the same client that you would use for the online Command Line Assistant. We'll configure it for offline use next.
+[source,bash,run]
+----
+dnf install -y command-line-assistant
+----

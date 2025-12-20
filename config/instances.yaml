@@ -1,14 +1,13 @@
 ---
-containers: []
 virtualmachines:
-  - name: "host1"
-    image: "rhel-9.5"
-    memory: "2G"
-    cores: 1
+  - name: "rhel"
+    image: "rhel-10-1-11-13-25"
+    memory: "32G"
+    bootloader: efi
+    cores: 32
     image_size: "40G"
     tags:
       - key: "AnsibleGroup"
         value: "bastions"
     networks:
       - default
-      - secondary
