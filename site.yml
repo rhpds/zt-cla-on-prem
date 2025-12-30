@@ -6,10 +6,9 @@ site:
 
 asciidoc:
   attributes:
-    lab_name: "I'm the lab_name var"
+    lab_name: "Offline CLA for Red Hat Enterprise Linux"
     release-version: master
     page-pagination: true
-    my_var: "foo - this is an asciidoc attribute from `site.yml`"
 
 content:
   sources:
