@@ -4,9 +4,9 @@ echo "Starting module called module-01" >> /tmp/progress.log
 mkdir ~/.config
 mkdir -p ~/.local/bin
 
-# register system with the Red Hat CDN
-KATELLO=$(rpm -qa | grep katello-ca)
+# # register system with the Red Hat CDN
+# KATELLO=$(rpm -qa | grep katello-ca)
 
-rpm -e $KATELLO
-subscription-manager clean
-subscription-manager register --activationkey=12-5-22-instruqt --org=12451665 --force
+# rpm -e $KATELLO
+# subscription-manager clean
+# subscription-manager register --activationkey=12-5-22-instruqt --org=12451665 --force

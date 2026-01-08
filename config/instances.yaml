@@ -4,7 +4,7 @@ virtualmachines:
     image: "rhel-10-1-11-13-25"
     memory: "32G"
     bootloader: efi
-    cores: 32
+    cores: 16
     image_size: "40G"
     tags:
       - key: "AnsibleGroup"
