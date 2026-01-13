@@ -7,13 +7,7 @@ lab:
   maintainer: "Will Kibbe (wkibbe@redhat.com)" 
   
   description:
-    summary: "Learn the fundamentals of networking in Red Hat Enterprise Linux"
-    goal: "Understand networking concepts and configuration in Red Hat Enterprise Linux"
-    concepts:
-      - "Networking"
-      - "Firewall"
-      - "Security"
-    use_case: "Configure secure networking for Red Hat Enterprise Linux"
+    summary: "Learn how to use Command Line Assistant offline in Red Hat Enterprise Linux"
     time_to_complete: "10"
     
   git_ref:
