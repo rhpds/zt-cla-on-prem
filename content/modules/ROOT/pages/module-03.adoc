@@ -1,5 +1,6 @@
 === Use the Command Line Assistant
 Ask the Command Line Assistant for help using the `c` command.
+
 NOTE: Because the model will be running on the CPU in this lab, it may take a few minutes to get a response. For best results, use a GPU for offline Command Line Assistant
 
 [source,bash,run]
