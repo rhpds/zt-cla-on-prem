@@ -8,6 +8,10 @@ lab:
   
   description:
     summary: "Learn how to use Command Line Assistant offline in Red Hat Enterprise Linux"
+    goal: "Configure Command Line Assistant for offline use"
+    concepts:
+     - "Command Line Assistant"
+    use case: "Use Command Line Assistant while processing data locally"
     time_to_complete: "10"
     
   git_ref:
