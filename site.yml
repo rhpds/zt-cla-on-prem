@@ -1,12 +1,12 @@
 ---
 site:
-  title: "Offline CLA for Red Hat Enterprise Linux"
+  title: "RHEL 10 Applied AI with Lightspeed and MCP"
   url: https://github.com/rhpds/zt-cla-on-prem
   start_page: modules::module-01.adoc
 
 asciidoc:
   attributes:
-    lab_name: "Offline CLA for Red Hat Enterprise Linux"
+    lab_name: "RHEL 10 Applied AI with Lightspeed and MCP"
     release-version: master
     page-pagination: true
 
@@ -16,7 +16,7 @@ content:
       start_path: content
 ui:
   bundle:
-    url: https://github.com/rhpds/nookbag-bundle/releases/download/v0.0.3/ui-bundle.zip
+    url: https://https://github.com/rhpds/rhdp_showroom_theme/releases/download/rh-one-2025/ui-bundle.zip
     snapshot: true
 
 output:
