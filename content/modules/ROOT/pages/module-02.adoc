@@ -22,3 +22,12 @@ Restart clad using systemctl to reload the configuration.
 ----
 systemctl restart clad
 ----
+
+[NOTE]
+.Behavior of developer preview software may differ from that of the GA release
+====
+For this demo, we ran a command between the first and second steps of this lab (i.e., just before you ran `rhel-cla start`). We don't anticipate this command to be necessary in the GA release, so it is not included in the lab. however, if you wish to replicate this lab using the developer preview, you will need to run the following command prior to `rhel-cla start`
+----
+sed -i 's|quay.io/ramalama/ramalama:latest|quay.io/ramalama/ramalama:6ae863e9f552797b45d0fd8632c4f7ec9b78c430|g' ~/.config/rhel-cla/.env
+----
+====
