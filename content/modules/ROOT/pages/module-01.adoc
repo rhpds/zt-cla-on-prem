@@ -13,7 +13,7 @@ Download the installer for offline Command Line Assistant.
 ----
 podman run -u : --rm -v $HOME/.config:/config:Z \
 -v $HOME/.local/bin:/config/.local/bin:Z \
-registry.redhat.io/rhel-cla/installer-rhel10:latest
+registry.redhat.io/rhel-cla/installer-rhel10@sha256:7dc16cb8af1afc1055dc2b293c7e45feebb072b9e3b602e5d008816b2be9fe59
 ----
 
 === Install Command Line Assistant
